@@ -1,0 +1,391 @@
+A proof of concept personalized music player for persons
+with Alzheimer’s Disease
+Marc Stoeckle
+Alumni
+University of British Columbia, The iSchool, 1961
+East Mall, Vancouver, BC Canada V6T 1Z1
+Marc.stoeckle@ubc.ca
+Luanne Freund
+University of British Columbia, The iSchool, 1961
+East Mall, Vancouver, BC Canada V6T 1Z1
+Luanne.freund@ubc.ca
+ABSTRACT
+Numerous studies have shown that persons diagnosed with
+mild to severe Alzheimer’s disease exhibit positive
+reactions when listening to familiar music. Results show
+that the disease spares musical memory in comparison to
+other memory parts of the brain until very late stages of
+Alzheimer’s. This project explores the potential of a
+minimal user-interface design prototype for smart devices
+that relies upon simple user interactions, i.e. browsing and
+skipping, to identify and retrieve familiar and preferred
+music. We report on the results of a small Wizard of Oz
+study that provides support for the initial design concept
+and input to the next round of the design cycle. Most
+participants were able to interact with the device and to
+quickly identify preferred music that provided a useful
+starting point for collaborative filtering-based
+recommendations.
+Keywords
+music information retrieval, Alzheimer’s, dementia,
+memory recollection, personalized music.
+INTRODUCTION
+A number of studies have demonstrated that persons
+diagnosed with mild to severe Alzheimer disease show
+signs of positive reactions when listening to familiar music
+(Cuddy & Duffin, 2005; Cuddy et al., 2012; Halpern &
+O'Connor, 2000). Dementia patients can benefit from
+listening to individualized music during music therapy by
+becoming less agitated, depressed and stressed, by
+remembering personal facts, becoming approachable and
+responsive, among other outcomes (Clement, Tonini,
+Khatir, Schiaratura, & Samson, 2012; Cooke, Moyle,
+Shum, & Murfield, 2010; Gerdner, 2010).
+However, current approaches to identifying the music
+preferences of dementia patients are burdensome, including
+the use of questionnaires and interviews with patients,
+family members and care givers (Gerdner, 2010).
+Motivated by research by Lancioni et al (2014), showing
+that simple technology aids can be used by individuals with
+Alzheimer’s disease, we undertook the design of a
+personalized music application that would provide a
+lightweight approach to identifying and retrieving familiar
+music.
+Such an application would be useful for caregivers and
+family members, and as an ultimate goal, be suitable for
+personal use by Alzheimer’s Disease (AD) patients as a
+means to listen to their favorite music. The autonomy
+afforded by the application would make it a cost-effective
+supplement to therapy and medical treatment, and would be
+beneficial for AD patients as well as their families, spouses,
+and caregivers (Buettner et al., 2010). The goals of the
+study reported here were to investigate the factors that must
+be taken into consideration in the design of such an
+application and to establish proof of concept. Therefore,
+this study proposes and tests a minimal user-interface
+design prototype for smart devices that relies upon simple
+user interactions, i.e. browsing and skipping, to identify and
+retrieve familiar and preferred music.
+PREVIOUS RESEARCH
+Previous studies in the fields of neuropsychology,
+neurology, music therapy, music information retrieval,
+computer science, digital humanities and psychogeriatrics
+have examined the effects of listening to familiar music on
+AD patients’. For example, work by Cuddy et al. (2005,
+2012) shows that long-term familiarity with melodies is
+prevalent across levels of dementia, including the severe
+stage for some individuals. Persons with mild, and some
+with moderate, dementia detected melodic distortions
+within the normal performance range of older adults. To see
+whether the exposure to music can actually enhance the
+production of self-defining memories, i.e. memories that
+contribute to self-discovery, self-understanding, and
+identity, Haj, et al. (2015) played specific music to study
+participants. They found that autobiographical recall is
+enhanced in AD patients when they are exposed to
+ASIST 2016, October 14-18, 2016, Copenhagen, Denmark.
+[Authors Retain Copyright.]
+personalized music in comparison with silence or music
+chosen by the researcher.
+In considering the design of a music player system for AD
+patients, there is an extensive body of relevant research on
+music retrieval and recommender systems, including
+collaborative and content-based systems that filter based on
+skipping behavior and body movement. For example,
+Pampalk and Widmer (2005) propose a filtering system that
+builds a profile based on user feedback gathered by a “skip”
+button and Hoashi et al. (2003), propose content-based
+filtering that retrieves songs based on the user’s genre
+preferences and relevance feedback. Technology design for
+AD patients presents challenges; however, research by
+Lancioni et al. (2014) supports the notion that they are
+capable of using specially designed technology to
+independently select and listen to preferred music. A
+similar study by Topo (2004) found that participants could
+use a multimedia system to identify and listen to music. Our
+approach builds on this previous work by proposing and
+testing a lightweight tablet-based music player that
+identified music preferences implicitly, based on user
+interactions.
+METHODS
+Design of Prototype
+The prototype for this study was implemented on an Apple
+IPad 4 device using customizable, open source code
+(HTML, CSS & Java Script) for a music player1. The
+overall design concept was to keep the interface visually
+appealing, but as simple as possible with respect to content
+and interaction design. All unnecessary text, such as name
+of the artist and music track was deleted. The interface
+(Figure 1) shows the CD cover art of the music track that is
+currently playing and the edges of the previously played
+(left) and upcoming (right) songs. Covers showing images
+of the musician/s were selected when possible to serve as a
+secondary memory cue. The current selected song can be
+played and paused by touching anywhere on the full-sized
+cover; pressing on the left or right cover edge will play the
+previous or next song. Swiping allows for backwards and
+forward scrolling.
+The playlist used for the music player application consisted
+of 40 songs, of which 25 were popular, 10 classical and 5
+North American folk songs. The songs were selected
+because research on Alzheimer’s patients shows that the
+symptoms of Alzheimer’s disease commonly occur at age
+67 and higher. Research shows that songs, especially those
+from the patients’ childhood and adolescence years, are
+mostly remembered even until severe stages of Alzheimer’s
+disease (Jacobsen et al., 2015; Cuddy et al., 2012; Fukui &
+Toyoshima, 2008; Cuddy & Duffin, 2005).
+Participants and Recruiting
+Participants were selected through a purposive sampling
+method from a pool of patients with age-related memory
+1 Source: www.codepen.io
+loss living at a special-needs, assisted-living care facility.
+These individuals were not suffering from Alzheimer’s
+disease, but were considered to be an appropriate proxy
+sample for the early stages of interface testing. Participants
+of age 60 and above who were considered capable of
+participating in the study were identified with the help of
+facility staff, invited, and voluntarily consented to take part.
+In keeping with the recommendation of Nielson and
+Landauer (1993), we recruited 5 participants (3 females, 2
+male, aged 62 to 69). All five study participants indicated
+that they had no previous experience in handling a tablet or
+a similar device.
+Figure 1: Music Player Prototype
+Procedures
+This cross-sectional study was conducted in a “Wizard of
+Oz” style simulation (Kelly, 2009) in a quiet room in the
+assisted-living facility with the researcher, the participant
+and one care-giver present. The first step of the study
+presented participants with the music player application on
+a tablet. They received a brief tutorial, were given
+headphones and asked to use the system. The participants
+browsed and listened to songs included in the playlist and
+decided when to play, forward or replay a song previous
+heard. Based on the participant’s preferences with the
+music player, the researcher then used Spotify, a
+commercial music streaming platform, to obtain
+recommendations and play additional songs. This was
+followed by a very brief interview including basic
+demographic questions (age, experience with technology,
+favorite music) and questions about the participants’
+experiences of using the system and of listening to the
+music. Sessions were brief: on average 12 (range 8.5 to 16)
+minutes.
+Data was collected through direct observation, audio
+recording, and screen capture. The largely qualitative data
+was analyzed thematically to identify patterns of activity
+and to extract instances of positive and negative
+experiences with the prototype.
+RESULTS
+Music Recommendations
+The study showed that, in most cases, the pre-generated
+playlist in combination with collaborative-filtering on
+Spotify allowed for a quick, interactive personalization and
+determination of the participants’ music taste. Each
+participant independently showed an emotional reaction to
+some degree (singing along, smiling, remembering
+childhood events, etc.) to one or several music pieces. For
+example, Participant 1 reacted to Al Jolson – Swanee after
+listening to it for a few seconds by saying out loud the
+artist’s name. After further listening he exclaimed, “I go for
+this for a while” and he recalled a movie he had seen about
+Al Jolson. After listening to several songs, he said, “It is so
+soothing. I am a very anxious person. That relaxes me.”
+Using the artist Al Jolson as a search query in Spotify
+resulted in several artists similar to Jolson, and Participant 1
+enjoyed listening to those, saying that they were familiar,
+although he did not remember the artist’s name.
+Participant II clearly enjoyed listening to the rockabilly
+songs included in the pre-generated playlist: Elvis Presley’s
+Jailhouse Rock and Bill Hailey’s Rock Around the Clock.
+He fully listed to both of these in contrast to several others
+he skipped after listening to only a few seconds. Bill Hailey
+was used in Spotify as a search query and the similar artists
+recommended played to Participant II resulted in a positive
+reaction in which he remembered events in his life. “Sure.
+Great Music. Oh Johnny Be Good. Who is it? .... Chuck
+Berry. Sure. I saw them live once…”.
+Results were similar for Participants III and V who both
+skipped through several songs to find two songs they
+listened to almost completely. Participant III reacted to the
+Hallelujah chorus from Handel’s Messiah with memories
+from childhood and recollected “we always played this in
+our family on Christmas time. Oh, it gives me thrills” and
+“Christmas time was a special time for us children seeing
+my dad playing Beethoven, Mozart and Bach”. Participant
+V reacted strongly to Procol Harum – A Whiter Shade of
+Pale and started to sing the lyrics along with the song. In
+Part 2 of the session, the recommended artists and songs
+created reactions such as “Yeah, yeah I like that one.
+Teacher never leave us alone” and “Yes. It is fantastic”.
+The case with Participant IV was somewhat different, as
+she rejected the playlist after moving quickly through three
+songs, saying she wanted to listen to folk songs from
+Germany, as she was born and grew up there. When we
+played German folk songs on Spotify, she reacted with
+excitement and started to hum the melody energetically.
+She laughed and asked in German: “Are we going to
+dance?”
+Interaction Design
+All five participants had, to their own account, never used a
+tablet and several issues were observed with the
+functionality of the music player. The swiping and tapping
+functions were challenging for participants. All participants
+tapped the touchscreen slowly and left their finger on the
+touchscreen to select an action. Several interventions by the
+researcher and the care giver slowly resulted in the correct
+motion of tapping the touchscreen and four of the five
+participants were capable of using the application
+independently by the end of the session.
+Other issues observed included a lack of understanding of
+the backward scrolling function of the player, using the
+previous CD-Cover image, even after several attempts to
+clarify. However, using the current CD-Covers as the main
+selectors was quickly understood by participants. Also, the
+stand-by mode of the tablet created confusion several times
+as the display suddenly turned off during the process of
+listening to a song. Despite these issues, participants
+expressed comfort and interest in using the application in
+the post session interviews. One participant stated: “I sure
+would enjoy listening to music with this, because I can’t
+remember the artists name but I can remember the tune.”
+DISCUSSION
+Findings suggest that it may be possible to identify
+individualized music for dementia patients quickly and
+easily without the use of interviews and questionnaires.
+Despite widely varying musical tastes, participants quickly
+found music they enjoyed and, while listening, showed
+signs of emotional wellbeing (Clement et al., 2012), singing
+along to familiar melodies, and even episodic memory
+(Cuddy et al., 2012). This was a very limited study that
+included participants with age-related memory loss rather
+than Alzheimer’s disease, so the results are merely
+suggestive. However, we consider the results promising and
+we intend to develop the next iteration of the music player
+that would incorporate a user profile derived from
+interaction with the initial playlist and a recommendation
+engine.
+Study results suggest that the interface design can be
+simplified further by removing the option to scroll back.
+Given that there are only a small number of songs in the
+playlist loop, users can scroll forward only and still relocate
+songs. Further testing is needed to adjust the sensitivity of
+the touch interface, which may need to be reduced for
+optimal handling by this population. Results suggest that
+patterns of listening and skipping behavior could be used to
+as input to a filter or personalization profile (Pamplak &
+Widmer, 2005). Looking forward we are investigating
+implicit interaction methods such as reading body
+movement (Godoy & Jensenius, 2009) or facial
+expressions. (Kumari et al., 2015) A built-in camera could
+read facial expressions such as anger, disgust or happiness
+and a recognition filter could determine whether a song
+should be skipped or not. Accordingly, an in-built camera
+could read body movements such as calm or agitated based
+upon which a filter decides to skip or keep playing a song.
+This type of approach would have the most potential value
+for AD patients in the severe stage who may be unable to
+use even the simplest of direct interaction techniques.
+One observed limitation of the current prototype is its
+cultural bias, as the selection playlist is based on the North
+American “top hits” lists. An interesting design challenge
+for such systems is a culturally neutral means of eliciting
+music preferences. However, the simplest approach in the
+meantime may be to develop a range of pre-generated
+playlists to accommodate the cultural diversity of the user
+population.
+CONCLUSION
+This preliminary study showed that a music player
+application with a minimal user-interface has the potential
+to be used independently by dementia patients. In general,
+study participants showed eagerness to learn the application
+and enthusiasm for listening to music with it. Further, the
+study showed that without asking study participants, care
+givers or family members, it was possible to determine their
+musical preferences based solely upon their interactions
+with a brief, predetermined music playlist. The results of
+this study will inform the next design phase of this
+prototype.
+ACKNOWLEDGMENTS
+Thank you to the study participants for their time and
+engagement, to the staff of the senior's residence where we
+carried out the study, and to Cassie McFadden who assisted
+with the study.
+REFERENCES
+Buettner, L. L., Yu, F., & Burgener, S. C. (2010). Evidence
+Supporting Technology-Based Interventions for
+People with Early-Stage Alzheimer’s Disease. Journal
+of Gerontological Nursing, 36(10), 15–19.
+Clement, S., Tonini, A., Khatir, F., Schiaratura, L., &
+Samson, S. (2012). Short and Longer Term Effects of
+Musical Intervention in Severe Alzheimer's Disease.
+Music Perception: an Interdisciplinary Journal, 29(5),
+533–541.
+Cooke, M. L., Moyle, W., Shum, D. H. K., & Murfield, H.
+J. E. (2010). A randomized controlled trial exploring
+the effect of music on agitated behaviours and anxiety
+in older people with dementia. Aging and Mental
+Health, 14(8), 905–916.
+Cuddy, L. L., & Duffin, J. (2005). Music, memory, and
+Alzheimer’s disease: is music recognition spared in
+dementia, and how can it be assessed? Medical
+Hypotheses, 64(2), 229–235.
+Cuddy, L. L., Duffin, J., Gill, S. S., Brown, C. L., Sikka, R.,
+& Vanstone, A. D. (2012). Memory for Melodies and
+Lyrics in Alzheimer's Disease. Music Perception: an
+Interdisciplinary Journal, 29(5), 479–491.
+Fukui, H., & Toyoshima, K. (2008). Music facilitate the
+neurogenesis, regeneration and repair of neurons.
+Medical Hypotheses, 71(5), 765–769.
+Gerdner, L. A. (2010). Individualized Music for Elders with
+Dementia. Journal of Gerontological Nursing, 36(6),
+1–15.
+Godoy, R. I., & Jensenius, A. R. (2009). Body Movement
+in Music information retrieval (pp. 45–50). Presented
+at the 10th International Society for Music Information
+Retrieval Conference.
+Haj, El, M., Antoine, P., Nandrino, J. L., Gély-Nargeot, M.-
+C., & Raffard, S. (2015). Self-defining memories
+during exposure to music in Alzheimer's disease.
+International Psychogeriatrics , 27 (10), 1719–1730.
+Halpern, A. R., & O'Connor, M. G. (2000). Implicit
+memory for music in Alzheimer's disease.
+Neuropsychology, 14(3), 391–397.
+Hoashi, K., Matsumoto, K., & Inoue, N. (2003).
+Personalization of User Profiles for Content-based
+Music Retrieval Based on Relevance Feedback, 1–10.
+Jacobsen, J.-H., Stelzer, J., Fritz, T. H., Chételat, G., La
+Joie, R., & Turner, R. (2015). Why musical memory
+can be preserved in advanced Alzheimer’s disease.
+Brain, 138(8), 2438–2450.
+Kelly, D. (2009). Methods for Evaluating Interactive
+Information Retrieval Systems with Users.
+Foundations and Trends® in Information Retrieval,
+3(1—2), 1–224.
+Kumari, J., Rajesh, R., & Pooja, K. M. (2015). Facial
+Expression Recognition: A Survey. Procedia -
+Procedia Computer Science, 58, 486–491.
+Lancioni, G. E., Singh, N. N., O’Reilly, M. F., Sigafoos, J.,
+Renna, C., Pinto, K., et al. (2014). Research in
+Developmental Disabilities Persons with moderate
+Alzheimer’s disease use simple technology aids to
+manage daily activities and leisure occupation.
+Research in Developmental Disabilities, 35(9), 2117–
+2128.
+Nielsen, Jakob, and Landauer, Thomas K.: "A mathematical
+model of the finding of usability problems,"
+Proceedings of ACM INTERCHI'93 Conference
+(Amsterdam, The Netherlands, 24-29 April 1993), pp.
+206-213.
+Pampalk, E., & Widmer, G. (2005). Dynamic playlist
+generation based on skipping behavior (pp. 634–637).
+Presented at the 10th International Society for Music
+Information Retrieval Conference.
+Topo, P. (2004). Assessment of a Music-Based Multimedia
+Program for People with Dementia. Dementia, 3 (3),
+331–350.
+Copyright of Proceedings of the Association for Information Science & Technology is the
+property of John Wiley & Sons, Inc. and its content may not be copied or emailed to multiple
+sites or posted to a listserv without the copyright holder's express written permission.
+However, users may print, download, or email articles for individual use.
