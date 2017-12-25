@@ -27,3 +27,17 @@ Each paper is downloaded both fulltext in pdf format (saved in Datasets/pdf/) an
 The pdf fulltext is then copied into txt file (saved in Datasets/txt/) for processing in the Python program. 
 
 Both txt and csv files should be named similarly; for example, Chong2016.txt and Chong2016.csv.
+
+## 4. How to run the program?
+- If you have any new files for datasets, make sure the csv and txt versions have the same name and are saved in Datasets/csv and Datasets/txt respectively.
+- Make sure the required modules are installed.
+- Run the file FinalProject.py. Choose the option you want from 0 to 8. If you want to quit, press q or Q.
+0. View the collection
+1. Update full collection of papers
+2. Manually add a paper into collection
+3. Update details of an existing paper
+4. Delete a paper
+5. Search paper by author name
+6. Search paper by title
+7. Search paper by publication year
+8. View author network of the collection
